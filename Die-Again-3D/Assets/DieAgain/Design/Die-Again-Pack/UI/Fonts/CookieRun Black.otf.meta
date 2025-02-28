@@ -10,7 +10,9 @@ TrueTypeFontImporter:
   includeFontData: 1
   fontNames:
   - CookieRunOTF
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1e888d4a35a81d9478d8cb7d1971c114, type: 3}
+  - {fileID: 12800000, guid: 96e43e17017a11144945e3585e519c86, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
