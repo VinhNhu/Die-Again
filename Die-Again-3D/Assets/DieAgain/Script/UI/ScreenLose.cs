@@ -15,6 +15,8 @@ public class ScreenLose : MonoBehaviour
     [SerializeField] private Button Replay;
     [SerializeField] private Button Skip;
 
+    [SerializeField] private GameObject playerRender;
+
     protected void OnEnable()
     {
         Observe.AddObserver("GameLose", OnUpdate);
@@ -52,6 +54,7 @@ public class ScreenLose : MonoBehaviour
     {
         AudioController.Instance.PlaySound(AudioController.Instance.Lose);
         panel.SetActive(true);
+        playerRender.SetActive(true);
         StartCoroutine(DisPLaytextLose());
     }
 
