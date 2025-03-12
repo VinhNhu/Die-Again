@@ -28,7 +28,7 @@ public class GameManager : Singleton<GameManager>
     {
         if (Pref.level >= _level.Length)
         {
-            Pref.level = Random.Range(1, _level.Length);
+            Pref.level = Random.Range(0, _level.Length);
         }
     }
 
